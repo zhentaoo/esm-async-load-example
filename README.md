@@ -11,4 +11,4 @@
 - 常规Vue3业务项目
 - 使用defineAsyncComponent动态加载esm组件
 
-![](./doc/sss.png)
+![](https://raw.githubusercontent.com/zhentaoo/esm-async-load-example/master/doc/sss.png)
