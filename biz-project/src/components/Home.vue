@@ -1,17 +1,15 @@
 <template>
   <div class="hello">
     {{comps}}
- 
     <component v-for="comp in comps" :is="comp"></component>
   </div>
 </template>
 
 <script type="module">
 import { defineAsyncComponent } from 'vue'
-// const Content = defineAsyncComponent(() => import('http://127.0.0.1:5500/dist/my-lib.es.js'))
 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
   },
@@ -23,7 +21,9 @@ export default {
   created() {
     setTimeout(() => {
       const data = [
-        'http://127.0.0.1:5500/dist/my-lib.es.js'
+        'http://127.0.0.1:5500/dist/button.es.js',
+        'http://127.0.0.1:5500/dist/select.es.js',
+        'http://127.0.0.1:5500/dist/img.es.js',
       ]
       data.forEach(url => {
         this.comps.push(defineAsyncComponent(() => import(url)))

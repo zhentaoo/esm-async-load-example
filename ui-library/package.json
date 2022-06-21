@@ -1,7 +1,19 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.37",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue": "^3.2.16"
+  },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@types/node": "^18.0.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "lerna": "^3.22.1",
+    "vite": "^2.9.12"
   }
 }

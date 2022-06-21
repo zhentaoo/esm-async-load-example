@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "allowJs": true,
+  },
+  "exclude": ["node_modules", "**/__test?__", "**/dist/**"],
+  "allowSyntheticDefaultImports": true,
+  "strict": true,
+  "baseUrl": "."
+}
